@@ -1,0 +1,12 @@
+Meta
+doc
+*.Rcheck
+*.tar.gz
+*.so
+*.o
+.local
+src-*
+./rRelaxIV_*
+inst/doc
+.Rproj.user
+.DS_Store
