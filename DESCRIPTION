@@ -1,4 +1,4 @@
-Package: rRelaxIV
+Package: rrelaxiv
 Version: 0.01
 Title: R interface to RELAX-IV
 Description: RELAX-IV minimum cost flow solver,

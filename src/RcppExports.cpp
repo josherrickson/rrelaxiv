@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // mahalanobisHelper
 SEXP mahalanobisHelper(SEXP data, SEXP index, SEXP invScaleMat);
-RcppExport SEXP _rRelaxIV_mahalanobisHelper(SEXP dataSEXP, SEXP indexSEXP, SEXP invScaleMatSEXP) {
+RcppExport SEXP _rrelaxiv_mahalanobisHelper(SEXP dataSEXP, SEXP indexSEXP, SEXP invScaleMatSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -20,7 +20,7 @@ END_RCPP
 }
 // ismOps
 SEXP ismOps(SEXP o, SEXP a, SEXP b);
-RcppExport SEXP _rRelaxIV_ismOps(SEXP oSEXP, SEXP aSEXP, SEXP bSEXP) {
+RcppExport SEXP _rrelaxiv_ismOps(SEXP oSEXP, SEXP aSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -33,7 +33,7 @@ END_RCPP
 }
 // r_smahal
 SEXP r_smahal(SEXP index, SEXP data, SEXP z);
-RcppExport SEXP _rRelaxIV_r_smahal(SEXP indexSEXP, SEXP dataSEXP, SEXP zSEXP) {
+RcppExport SEXP _rrelaxiv_r_smahal(SEXP indexSEXP, SEXP dataSEXP, SEXP zSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -46,7 +46,7 @@ END_RCPP
 }
 // subsetInfSparseMatrix
 SEXP subsetInfSparseMatrix(SEXP whichRows, SEXP whichCols, SEXP x);
-RcppExport SEXP _rRelaxIV_subsetInfSparseMatrix(SEXP whichRowsSEXP, SEXP whichColsSEXP, SEXP xSEXP) {
+RcppExport SEXP _rrelaxiv_subsetInfSparseMatrix(SEXP whichRowsSEXP, SEXP whichColsSEXP, SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -56,17 +56,4 @@ BEGIN_RCPP
     rcpp_result_gen = Rcpp::wrap(subsetInfSparseMatrix(whichRows, whichCols, x));
     return rcpp_result_gen;
 END_RCPP
-}
-
-static const R_CallMethodDef CallEntries[] = {
-    {"_rRelaxIV_mahalanobisHelper", (DL_FUNC) &_rRelaxIV_mahalanobisHelper, 3},
-    {"_rRelaxIV_ismOps", (DL_FUNC) &_rRelaxIV_ismOps, 3},
-    {"_rRelaxIV_r_smahal", (DL_FUNC) &_rRelaxIV_r_smahal, 3},
-    {"_rRelaxIV_subsetInfSparseMatrix", (DL_FUNC) &_rRelaxIV_subsetInfSparseMatrix, 3},
-    {NULL, NULL, 0}
-};
-
-RcppExport void R_init_rRelaxIV(DllInfo *dll) {
-    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
-    R_useDynamicSymbols(dll, FALSE);
 }

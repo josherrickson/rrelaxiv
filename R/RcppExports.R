@@ -2,18 +2,18 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 mahalanobisHelper <- function(data, index, invScaleMat) {
-    .Call(`_rRelaxIV_mahalanobisHelper`, data, index, invScaleMat)
+    .Call(`_rrelaxiv_mahalanobisHelper`, data, index, invScaleMat)
 }
 
 ismOps <- function(o, a, b) {
-    .Call(`_rRelaxIV_ismOps`, o, a, b)
+    .Call(`_rrelaxiv_ismOps`, o, a, b)
 }
 
 r_smahal <- function(index, data, z) {
-    .Call(`_rRelaxIV_r_smahal`, index, data, z)
+    .Call(`_rrelaxiv_r_smahal`, index, data, z)
 }
 
 subsetInfSparseMatrix <- function(whichRows, whichCols, x) {
-    .Call(`_rRelaxIV_subsetInfSparseMatrix`, whichRows, whichCols, x)
+    .Call(`_rrelaxiv_subsetInfSparseMatrix`, whichRows, whichCols, x)
 }
 
