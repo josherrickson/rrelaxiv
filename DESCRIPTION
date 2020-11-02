@@ -1,0 +1,18 @@
+Package: rRelaxIV
+Version: 0.01
+Title: R interface to RELAX-IV
+Description: RELAX-IV minimum cost flow solver,
+Author: Ben B. Hansen <ben.hansen@umich.edu>, Mark Fredrickson
+    <mark.m.fredrickson@gmail.com>, Josh Buckner, Josh Errickson,
+    Adam Rauh and Peter Solenberger, with embedded Fortran code due to
+    Dimitri P. Bertsekas <dimitrib@mit.edu> and Paul Tseng
+Maintainer: Mark M. Fredrickson <mark.m.fredrickson@gmail.com>
+LazyData: true
+Depends:
+    R (>= 2.15.1)
+LinkingTo: Rcpp
+Imports:
+    Rcpp
+Suggests:
+    roxygen2
+RoxygenNote: 7.1.1
