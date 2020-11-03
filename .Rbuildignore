@@ -1,0 +1,7 @@
+Makefile
+load.R
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.travis\.yml$
+^appveyor\.yml$
+README.md
