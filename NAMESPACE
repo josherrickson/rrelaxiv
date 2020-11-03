@@ -2,4 +2,4 @@
 
 export(relaxinfo)
 export(relaxiv)
-useDynLib(rrelaxiv, .registration=TRUE)
+useDynLib(rRELAXIV, .registration=TRUE)

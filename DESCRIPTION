@@ -1,4 +1,4 @@
-Package: rrelaxiv
+Package: rRELAXIV
 Version: 0.01
 Title: R interface to RELAX-IV
 Description: Provides access to the RELAX-IV minimum cost flow solver, written in FORTRAN.
