@@ -5,3 +5,4 @@ load.R
 ^\.travis\.yml$
 ^appveyor\.yml$
 README.md
+data-raw
