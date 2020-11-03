@@ -6,3 +6,4 @@ load.R
 ^appveyor\.yml$
 README.md
 data-raw
+.github
