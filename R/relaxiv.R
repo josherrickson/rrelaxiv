@@ -1,16 +1,16 @@
 ##' RELAX-IV Algorithm
 ##'
 ##' @param startnodes A vector of starting nodes.
-##' @param endnotes A vector of ending nodes.
+##' @param endnodes A vector of ending nodes.
 ##' @param arccosts A vector of arc costs.
 ##' @param arccapacity A vector of arc capacities.
 ##' @param supply A vector of supplies.
 ##' @return The solution.
 ##' @export
-RELAX_IV <- function(startnodes, endnotes, arccosts, arccapacity, supply) {
-  stopifnot(length(startnotes) == length(endnotes),
-            length(startnotes) == length(arccosts),
-            length(startnotes) == length(arccapacity))
+RELAX_IV <- function(startnodes, endnodes, arccosts, arccapacity, supply) {
+  stopifnot(length(startnodes) == length(endnodes),
+            length(startnodes) == length(arccosts),
+            length(startnodes) == length(arccapacity))
 
   .Fortran("relaxalg",
            n1 = as.integer(length(unique(c(startnodes, endnodes)))),

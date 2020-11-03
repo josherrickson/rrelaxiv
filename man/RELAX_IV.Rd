@@ -4,12 +4,12 @@
 \alias{RELAX_IV}
 \title{RELAX-IV Algorithm}
 \usage{
-RELAX_IV(startnodes, endnotes, arccosts, arccapacity, supply)
+RELAX_IV(startnodes, endnodes, arccosts, arccapacity, supply)
 }
 \arguments{
 \item{startnodes}{A vector of starting nodes.}
 
-\item{endnotes}{A vector of ending nodes.}
+\item{endnodes}{A vector of ending nodes.}
 
 \item{arccosts}{A vector of arc costs.}
 
