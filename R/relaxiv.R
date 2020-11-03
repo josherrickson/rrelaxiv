@@ -19,21 +19,27 @@ RELAX_IV <- function(startnodes, endnodes, arccosts, arccapacity, supply) {
             length(startnodes) == length(arccosts),
             length(startnodes) == length(arccapacity))
 
-  .Fortran("relaxalg",
-           n1 = as.integer(length(unique(c(startnodes, endnodes)))),
-           na1 = as.integer(length(startnodes)),
-           startn1 = as.integer(startnodes),
-           endn1 = as.integer(endnodes),
-           c1 = as.integer(arccosts),
-           u1 = as.integer(arccapacity),
-           b1 = as.integer(supply),
-           x1 = integer(length(startnodes)),
-           crash1 = as.integer(0),
-           large1 = as.integer(.Machine$integer.max/4),
-           feasible1 = integer(1),
-           NAOK = FALSE,
-           DUP = TRUE,
-           PACKAGE = "rRELAXIV")
+  out <- .Fortran("relaxalg",
+                  n1 = as.integer(length(unique(c(startnodes, endnodes)))),
+                  na1 = as.integer(length(startnodes)),
+                  startn1 = as.integer(startnodes),
+                  endn1 = as.integer(endnodes),
+                  c1 = as.integer(arccosts),
+                  u1 = as.integer(arccapacity),
+                  b1 = as.integer(supply),
+                  x1 = integer(length(startnodes)),
+                  crash1 = as.integer(0),
+                  large1 = as.integer(.Machine$integer.max/4),
+                  feasible1 = integer(1),
+                  NAOK = FALSE,
+                  DUP = TRUE,
+                  PACKAGE = "rRELAXIV")
+
+  if (out$feasible1 == 0) {
+    stop("Not feasible")
+  } else {
+    return(out$x1)
+  }
 }
 
 ##' Lower-level access to the RELAX-IV algorithm
@@ -54,7 +60,7 @@ RELAX_IV <- function(startnodes, endnodes, arccosts, arccapacity, supply) {
 ##'   initialization yields long solution times.
 ##' @param large1 A very large integer to represent infinity
 ##' @param feasible1 ???
-##' @return The solution.
+##' @return A list containing all parameters, where `x1` has been updated to contain the solution, and `feasible1` contains a flag for feasibility.
 ##' @export
 .RELAX_IV <- function(n1, na1, startn1, endn1, c1, u1, b1,
                       x1, crash1, large1, feasible1) {

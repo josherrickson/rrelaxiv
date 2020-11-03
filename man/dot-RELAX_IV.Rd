@@ -33,7 +33,7 @@ initialization yields long solution times.}
 \item{feasible1}{???}
 }
 \value{
-The solution.
+A list containing all parameters, where `x1` has been updated to contain the solution, and `feasible1` contains a flag for feasibility.
 }
 \description{
 `.RELAX_IV` provides low-level access to the FORTRAN; taking the
