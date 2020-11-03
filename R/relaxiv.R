@@ -7,6 +7,13 @@
 ##' @param supply A vector of supplies.
 ##' @return The solution.
 ##' @export
+##' @examples
+##' data(relaxexample)
+##' RELAX_IV(relaxexample$startnodes,
+##'          relaxexample$endnodes,
+##'          relaxexample$arccosts,
+##'          relaxexample$arccapacity,
+##'          relaxexample$supply)
 RELAX_IV <- function(startnodes, endnodes, arccosts, arccapacity, supply) {
   stopifnot(length(startnodes) == length(endnodes),
             length(startnodes) == length(arccosts),

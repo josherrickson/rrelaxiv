@@ -23,3 +23,11 @@ The solution.
 \description{
 RELAX-IV Algorithm
 }
+\examples{
+data(relaxexample)
+RELAX_IV(relaxexample$startnodes,
+         relaxexample$endnodes,
+         relaxexample$arccosts,
+         relaxexample$arccapacity,
+         relaxexample$supply)
+}
