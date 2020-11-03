@@ -10,9 +10,6 @@ Maintainer: Mark M. Fredrickson <mark.m.fredrickson@gmail.com>
 LazyData: true
 Depends:
     R (>= 2.15.1)
-LinkingTo: Rcpp
-Imports:
-    Rcpp
 Suggests:
     roxygen2
 RoxygenNote: 7.1.1
