@@ -15,6 +15,7 @@
 ##' @param large1 A very large integer to represent infinity
 ##' @param feasible1 ???
 ##' @return ????
+##' @export
 ##' @author Josh Errickson
 relaxiv <- function(n1,
                     na1,
