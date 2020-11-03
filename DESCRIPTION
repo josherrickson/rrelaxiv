@@ -1,7 +1,7 @@
 Package: rrelaxiv
 Version: 0.01
 Title: R interface to RELAX-IV
-Description: RELAX-IV minimum cost flow solver,
+Description: Provides access to the RELAX-IV minimum cost flow solver, written in FORTRAN.
 Author: Ben B. Hansen <ben.hansen@umich.edu>, Mark Fredrickson
     <mark.m.fredrickson@gmail.com>, Josh Buckner, Josh Errickson,
     Adam Rauh and Peter Solenberger, with embedded Fortran code due to
@@ -17,3 +17,4 @@ Suggests:
     roxygen2
 RoxygenNote: 7.1.1
 Encoding: UTF-8
+License: GPL-3

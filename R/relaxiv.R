@@ -41,5 +41,5 @@ relaxiv <- function(n1,
            feasible1,
            NAOK = FALSE,
            DUP = TRUE,
-           PACKAGE = "optmatch")
+           PACKAGE = "rrelaxiv")
 }
