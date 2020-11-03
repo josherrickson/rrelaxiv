@@ -35,11 +35,7 @@ RELAX_IV <- function(startnodes, endnodes, arccosts, arccapacity, supply) {
                   DUP = TRUE,
                   PACKAGE = "rRELAXIV")
 
-  if (out$feasible1 == 0) {
-    stop("Not feasible")
-  } else {
-    return(out$x1)
-  }
+  return(out$x1)
 }
 
 ##' Lower-level access to the RELAX-IV algorithm
