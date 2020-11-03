@@ -30,7 +30,7 @@ RELAX_IV <- function(startnodes, endnodes, arccosts, arccapacity, supply) {
            x1 = integer(length(startnodes)),
            crash1 = as.integer(0),
            large1 = as.integer(.Machine$integer.max/4),
-           feasible1 = integer(0),
+           feasible1 = integer(1),
            NAOK = FALSE,
            DUP = TRUE,
            PACKAGE = "rRELAXIV")
