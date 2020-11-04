@@ -61,8 +61,8 @@ RELAX_IV <- function(startnodes, endnodes, arccosts, arccapacity, supply) {
 .RELAX_IV <- function(n1, na1, startn1, endn1, c1, u1, b1,
                       x1, crash1, large1, feasible1) {
   .Fortran("relaxalg",
-           n1, na1, startn1, endn1, c1, u1, b1,
-           x1, crash1, large1, feasible1,
+           n1 = n1, na1 = na1, startn1 = startn1, endn1 = endn1, c1 = c1, u1 = u1, b1 = b1,
+           x1 = x1, crash1 = crash1, large1 = large1, feasible1 = feasible1,
            NAOK = FALSE,
            DUP = TRUE,
            PACKAGE = "rRELAXIV")
