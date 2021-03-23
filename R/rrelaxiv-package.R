@@ -1,7 +1,8 @@
 #' @useDynLib rRELAXIV, .registration=TRUE
 NULL
-#> NULL
+# > NULL
 
 .onAttach <- function(lib, pkg) {
-packageStartupMessage("The rRELAXIV package has an academic license. Enter relaxinfo() for more information.")
+  packageStartupMessage(paste("The rRELAXIV package has an academic license.
+                               Enter relaxinfo() for more information."))
 }
