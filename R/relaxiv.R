@@ -13,7 +13,7 @@
 ##'          relaxexample$endnodes,
 ##'          relaxexample$arccosts,
 ##'          relaxexample$arccapacity,
-##'          relaxexample$supply)
+##'          relaxexample$nodedemand)
 RELAX_IV <- function(startnodes, endnodes, arccosts, arccapacity, supply) {
   stopifnot(
     length(startnodes) == length(endnodes),
