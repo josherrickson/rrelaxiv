@@ -14,12 +14,25 @@
 ##'          relaxexample$arccosts,
 ##'          relaxexample$arccapacity,
 ##'          relaxexample$nodedemand)
-RELAX_IV <- function(startnodes, endnodes, arccosts, arccapacity, supply) {
-  stopifnot(
-    length(startnodes) == length(endnodes),
-    length(startnodes) == length(arccosts),
-    length(startnodes) == length(arccapacity)
-  )
+RELAX_IV <- function(startnodes,
+                     endnodes,
+                     arccosts,
+                     arccapacity,
+                     supply) {
+  if (length(startnodes) != length(endnodes) ||
+    length(startnodes) != length(arccosts) ||
+    length(startnodes) != length(arccapacity)) {
+    stop(paste(
+      "Each of startnodes, endnodes, arccosts and arccapcity must be",
+      "the same length"
+    ))
+  }
+  if (length(supply) != length(unique(c(startnodes, endnodes)))) {
+    stop(paste(
+      "Each node must have a supply (length of supply must equal",
+      "length of unique nodes in startnodes or endnodes)"
+    ))
+  }
 
   out <- .Fortran("relaxalg",
     n1 = as.integer(length(unique(c(startnodes, endnodes)))),
