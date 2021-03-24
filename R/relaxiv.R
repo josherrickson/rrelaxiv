@@ -65,18 +65,23 @@ RELAX_IV <- function(startnodes,
 ##' @param c1 Costs vector
 ##' @param u1 Capacities
 ##' @param b1 Demands
-##' @param x1 ???
 ##' @param crash1 Set crash equal to 1 to activate an auction/shortest path
 ##'   subroutine for getting the initial price-flow pair. this is recommended
 ##'   for difficult problems where the default initialization yields long
 ##'   solution times.
 ##' @param large1 A very large integer to represent infinity
-##' @param feasible1 ???
-##' @return A list containing all parameters, where `x1` has been updated to
-##'   contain the solution, and `feasible1` contains a flag for feasibility.
+##' @return A list containing all parameters, as well as `x1` which contains the
+##'   solution, and `feasible1` which contains a flag for feasibility.
 ##' @export
-.RELAX_IV <- function(n1, na1, startn1, endn1, c1, u1, b1,
-                      x1, crash1, large1, feasible1) {
+.RELAX_IV <- function(n1,
+                      na1,
+                      startn1,
+                      endn1,
+                      c1,
+                      u1,
+                      b1,
+                      crash1,
+                      large1) {
   .Fortran("relaxalg",
     n1 = n1,
     na1 = na1,
@@ -85,10 +90,10 @@ RELAX_IV <- function(startnodes,
     c1 = c1,
     u1 = u1,
     b1 = b1,
-    x1 = x1,
+    x1 = integer(length(startn1)),
     crash1 = crash1,
     large1 = large1,
-    feasible1 = feasible1,
+    feasible1 = integer(1),
     NAOK = FALSE,
     DUP = TRUE,
     PACKAGE = "rRELAXIV"

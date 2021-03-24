@@ -4,7 +4,7 @@
 \alias{.RELAX_IV}
 \title{Lower-level access to the RELAX-IV algorithm}
 \usage{
-.RELAX_IV(n1, na1, startn1, endn1, c1, u1, b1, x1, crash1, large1, feasible1)
+.RELAX_IV(n1, na1, startn1, endn1, c1, u1, b1, crash1, large1)
 }
 \arguments{
 \item{n1}{Number of nodes}
@@ -21,20 +21,16 @@
 
 \item{b1}{Demands}
 
-\item{x1}{???}
-
 \item{crash1}{Set crash equal to 1 to activate an auction/shortest path
 subroutine for getting the initial price-flow pair. this is recommended
 for difficult problems where the default initialization yields long
 solution times.}
 
 \item{large1}{A very large integer to represent infinity}
-
-\item{feasible1}{???}
 }
 \value{
-A list containing all parameters, where `x1` has been updated to
-  contain the solution, and `feasible1` contains a flag for feasibility.
+A list containing all parameters, as well as `x1` which contains the
+  solution, and `feasible1` which contains a flag for feasibility.
 }
 \description{
 `.RELAX_IV` provides low-level access to the FORTRAN; taking the exact input
