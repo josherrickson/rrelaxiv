@@ -23,19 +23,20 @@
 
 \item{x1}{???}
 
-\item{crash1}{Set crash equal to 1 to activate an auction/shortest
-path subroutine for getting the initial price-flow pair. this is
-recommended for difficult problems where the default
-initialization yields long solution times.}
+\item{crash1}{Set crash equal to 1 to activate an auction/shortest path
+subroutine for getting the initial price-flow pair. this is recommended
+for difficult problems where the default initialization yields long
+solution times.}
 
 \item{large1}{A very large integer to represent infinity}
 
 \item{feasible1}{???}
 }
 \value{
-A list containing all parameters, where `x1` has been updated to contain the solution, and `feasible1` contains a flag for feasibility.
+A list containing all parameters, where `x1` has been updated to
+  contain the solution, and `feasible1` contains a flag for feasibility.
 }
 \description{
-`.RELAX_IV` provides low-level access to the FORTRAN; taking the
-exact input as the FORTRAN code. It does NOT do any input checking.
+`.RELAX_IV` provides low-level access to the FORTRAN; taking the exact input
+as the FORTRAN code. It does NOT do any input checking.
 }
