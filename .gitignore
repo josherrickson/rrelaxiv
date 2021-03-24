@@ -6,7 +6,7 @@ doc
 *.o
 .local
 src-*
-./rRELAXIV_*
+./rrelaxiv_*
 inst/doc
 .Rproj.user
 .DS_Store

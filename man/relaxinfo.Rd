@@ -11,7 +11,7 @@ Some information about licenses of code and algorithms.
 }
 \description{
 Function to display license information regarding code embedded in
-\code{rRELAXIV}.
+\code{rrelaxiv}.
 }
 \author{
 Ben B. Hansen

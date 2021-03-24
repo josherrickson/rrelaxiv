@@ -1,1 +1,1 @@
-![R](https://github.com/josherrickson/rRELAXIV/workflows/R/badge.svg)
+![R](https://github.com/josherrickson/rrelaxiv/workflows/R/badge.svg)

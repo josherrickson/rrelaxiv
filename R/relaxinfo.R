@@ -1,5 +1,5 @@
 ##' Function to display license information regarding code embedded in
-##' \code{rRELAXIV}.
+##' \code{rrelaxiv}.
 ##'
 ##' @title Display license information about embedded code
 ##' @return Some information about licenses of code and algorithms.
@@ -8,7 +8,7 @@
 relaxinfo <- function() {
   if (!interactive()) {
     cat(
-      "The rRELAXIV package implements D. P. Bertsekas\n",
+      "The rrelaxiv package implements D. P. Bertsekas\n",
       "and P. Tseng\'s RELAX-IV algorithm and code:\n\n",
       "Bersekas, D. P. and  Tseng, P., \"Relaxation Methods for\n",
       "Minimum Cost ...\" Operations Research, vol. 26, 1988, 93-114;\n",
@@ -24,7 +24,7 @@ relaxinfo <- function() {
       "to \'satisfy in any part commercial delivery requirements to\n",
       "government or industry,\' require a special agreement with them.\n",
       "By extension, this requirement applies to most any use of R\n",
-      "functions in the rRELAXIV package.\n\n",
+      "functions in the rrelaxiv package.\n\n",
       "To request permissions not here relayed, contact Professor \n",
       "Bertsekas at Laboratory for Information and Decision Systems\n",
       "Massachusetts Institute of Technology\n",
@@ -36,7 +36,7 @@ relaxinfo <- function() {
     outConn <- file(outFile, open = "w")
     writeLines(
       paste(
-        "The rRELAXIV package implements D. P. Bertsekas\n",
+        "The rrelaxiv package implements D. P. Bertsekas\n",
         "P. Tseng\'s RELAX-IV algorithm and code:\n\nBersekas, ",
         "D. P. and  Tseng, P., \"Relaxation Methods for\nMinimum ",
         "Cost ...\" Operations Research, vol. 26, 1988, 93-114;\nBertsekas, ",
@@ -51,7 +51,7 @@ relaxinfo <- function() {
         "\'satisfy in any part commercial delivery requirements to\n ",
         "government or industry,\' require a special agreement with them.\nBy ",
         "extension, this requirement applies to most any use of R\nfunctions ",
-        "in the rRELAXIV PACKAGE.\n\nTo ",
+        "in the rrelaxiv PACKAGE.\n\nTo ",
         "request permissions not here relayed, contact Professor ",
         "Bertsekas at\nLaboratory ",
         "for Information and Decision Systems\nMassachusetts ",
@@ -64,7 +64,7 @@ relaxinfo <- function() {
     )
     close(outConn)
     file.show(outFile,
-      title = "Important license information regarding rRELAXIV package",
+      title = "Important license information regarding rrelaxiv package",
       delete.file = TRUE
     )
   }

@@ -48,7 +48,7 @@ RELAX_IV <- function(startnodes,
     feasible1 = integer(1),
     NAOK = FALSE,
     DUP = TRUE,
-    PACKAGE = "rRELAXIV"
+    PACKAGE = "rrelaxiv"
   )
 
   return(out$x1)
@@ -96,6 +96,6 @@ RELAX_IV <- function(startnodes,
     feasible1 = integer(1),
     NAOK = FALSE,
     DUP = TRUE,
-    PACKAGE = "rRELAXIV"
+    PACKAGE = "rrelaxiv"
   )
 }
