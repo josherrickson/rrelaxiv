@@ -2,11 +2,11 @@ Package: rrelaxiv
 Version: 0.01
 Title: Interface to RELAX-IV
 Description: Provides access to the RELAX-IV minimum cost flow solver, written in FORTRAN.
-Author: Ben B. Hansen <ben.hansen@umich.edu>, Mark Fredrickson
-    <mark.m.fredrickson@gmail.com>, Josh Buckner, Josh Errickson,
-    Adam Rauh and Peter Solenberger, with embedded Fortran code due to
-    Dimitri P. Bertsekas <dimitrib@mit.edu> and Paul Tseng
-Maintainer: Mark M. Fredrickson <mark.m.fredrickson@gmail.com>
+Authors@R: c(person("Ben", "Hansen", role = "aut"),
+             person("Mark", "Fredrickson", role = "aut", email = "mark.m.fredrickson@gmail.com"),
+             person("Josh", "Errickson", role = c("cre","aut"), email = "jerrick@umich.edu"),
+             person("Dimitri", "Bertsekas", role = "aut", email = "dimitrib@mit.edu"),
+             person("Paul", "Tseng", role = "aut"))
 LazyData: true
 Depends:
     R (>= 2.15.1)
