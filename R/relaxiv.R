@@ -43,7 +43,8 @@ RELAX_IV <- function(startnodes,
     u1 = as.integer(arccapacity),
     b1 = as.integer(supply),
     x1 = integer(length(startnodes)),
-    rc1 = as.integer(arccosts), # No reduced costs for now
+    rc1 = as.integer(arccosts), # all dual prices = 0, so reduced
+                                # cost is set equal to cost
     crash1 = as.integer(0),
     large1 = as.integer(.Machine$integer.max / 4),
     feasible1 = integer(1),
