@@ -43,6 +43,7 @@ RELAX_IV <- function(startnodes,
     u1 = as.integer(arccapacity),
     b1 = as.integer(supply),
     x1 = integer(length(startnodes)),
+    rc1 = as.integer(arccosts), # No reduced costs for now
     crash1 = as.integer(0),
     large1 = as.integer(.Machine$integer.max / 4),
     feasible1 = integer(1),
@@ -65,6 +66,7 @@ RELAX_IV <- function(startnodes,
 ##' @param c1 Costs vector
 ##' @param u1 Capacities
 ##' @param b1 Demands
+##' @param rc1 Reduced Costs
 ##' @param crash1 Set crash equal to 1 to activate an auction/shortest path
 ##'   subroutine for getting the initial price-flow pair. this is recommended
 ##'   for difficult problems where the default initialization yields long
@@ -80,6 +82,7 @@ RELAX_IV <- function(startnodes,
                       c1,
                       u1,
                       b1,
+                      rc1,
                       crash1,
                       large1) {
   .Fortran("relaxalg",
@@ -91,6 +94,7 @@ RELAX_IV <- function(startnodes,
     u1 = u1,
     b1 = b1,
     x1 = integer(length(startn1)),
+    rc1 = rc1,
     crash1 = crash1,
     large1 = large1,
     feasible1 = integer(1),

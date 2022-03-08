@@ -4,7 +4,7 @@
 \alias{.RELAX_IV}
 \title{Lower-level access to the RELAX-IV algorithm}
 \usage{
-.RELAX_IV(n1, na1, startn1, endn1, c1, u1, b1, crash1, large1)
+.RELAX_IV(n1, na1, startn1, endn1, c1, u1, b1, rc1, crash1, large1)
 }
 \arguments{
 \item{n1}{Number of nodes}
@@ -20,6 +20,8 @@
 \item{u1}{Capacities}
 
 \item{b1}{Demands}
+
+\item{rc1}{Reduced Costs}
 
 \item{crash1}{Set crash equal to 1 to activate an auction/shortest path
 subroutine for getting the initial price-flow pair. this is recommended

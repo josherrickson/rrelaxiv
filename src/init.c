@@ -7,10 +7,10 @@
 */
 
 /* .Fortran calls */
-extern void F77_NAME(relaxalg)(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
+extern void F77_NAME(relaxalg)(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void*);
 
 static const R_FortranMethodDef FortranEntries[] = {
-    {"relaxalg", (DL_FUNC) &F77_NAME(relaxalg), 11},
+    {"relaxalg", (DL_FUNC) &F77_NAME(relaxalg), 12},
     {NULL, NULL, 0}
 };
 
