@@ -1,12 +1,13 @@
 Package: rrelaxiv
 Version: 0.01
 Title: Interface to RELAX-IV
-Description: Provides access to the RELAX-IV minimum cost flow solver, written in FORTRAN.
-Authors@R: c(person("Ben", "Hansen", role = "aut"),
-             person("Mark", "Fredrickson", role = "aut", email = "mark.m.fredrickson@gmail.com"),
+Description: Bertsekas and Tseng's FORTRAN implementation of the RELAX-IV minimum cost flow solver, with various minor modifications for compatibility with R.
+Authors@R: c(person("Dimitri", "Bertsekas", role = "aut", email = "dimitrib@mit.edu"),
+             person("Paul", "Tseng", role = "aut"),
              person("Josh", "Errickson", role = c("cre","aut"), email = "jerrick@umich.edu"),
-             person("Dimitri", "Bertsekas", role = "aut", email = "dimitrib@mit.edu"),
-             person("Paul", "Tseng", role = "aut"))
+             person("Mark", "Fredrickson", role = "aut", email = "mark.m.fredrickson@gmail.com"),
+             person("Ben", "Hansen", role = "aut"),
+             person("Peter", "Solenberge", role = "ctb"))
 LazyData: true
 Depends:
     R (>= 2.15.1)
