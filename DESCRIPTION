@@ -7,7 +7,7 @@ Authors@R: c(person("Dimitri", "Bertsekas", role = "aut", email = "dimitrib@mit.
              person("Josh", "Errickson", role = c("cre","aut"), email = "jerrick@umich.edu"),
              person("Mark", "Fredrickson", role = "aut", email = "mark.m.fredrickson@gmail.com"),
              person("Ben", "Hansen", role = "aut"),
-             person("Peter", "Solenberge", role = "ctb"))
+             person("Peter", "Solenberger", role = "ctb"))
 LazyData: true
 Depends:
     R (>= 2.15.1)
