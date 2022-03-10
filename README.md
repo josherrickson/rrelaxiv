@@ -29,6 +29,10 @@ Unfortunately the `drat::addRepo` needs to be run each time you plan on
 installing or updating. You may be better served adding the `drat::addRepo` line
 to your [.Rprofile](https://www.roelpeters.be/what-is-the-rprofile-file/).
 
+See [this wiki
+page](https://github.com/josherrickson/rrelaxiv/wiki/drat-system-status) for
+details of support for drat on various systems.
+
 ## Using `remotes`
 
 Installing using `remotes` (previously this was known as installing using
