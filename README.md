@@ -9,7 +9,7 @@ P. Bertsekas and Paul Tseng is made accessible inside R.
 
 This package is unlikely to ever appear on CRAN. Methods to install are below.
 
-## Using "drat"
+## Using drat
 
 The [drat](https://eddelbuettel.github.io/drat/) package can be used to
 installed the package. On Windows/Mac systems this should install a binary
@@ -33,10 +33,10 @@ See [this wiki
 page](https://github.com/josherrickson/rrelaxiv/wiki/drat-system-status) for
 details of support for drat on various systems.
 
-## Using `remotes`
+## Using remotes
 
-Installing using `remotes` (previously this was known as installing using
-`devtools`) will build the package from source directly from this repo. You can
+Installing using remotes (previously this was known as installing using
+devtools) will build the package from source directly from this repo. You can
 either build the most recent
 [release](https://github.com/josherrickson/rrelaxiv/releases) with
 
