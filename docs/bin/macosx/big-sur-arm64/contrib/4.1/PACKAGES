@@ -1,0 +1,6 @@
+Package: rrelaxiv
+Version: 0.1.0
+Depends: R (>= 2.15.1)
+Suggests: roxygen2, testthat (>= 3.0.0)
+License: file LICENSE
+MD5sum: c9f8c60c2a9b9fdb988a76c5f6a91433
