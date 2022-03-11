@@ -1,7 +1,6 @@
 Meta
 doc
 *.Rcheck
-*.tar.gz
 *.so
 *.o
 .local
