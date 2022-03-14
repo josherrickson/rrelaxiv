@@ -33,20 +33,20 @@ See [this wiki
 page](https://github.com/josherrickson/rrelaxiv/wiki/drat-system-status) for
 details of support for **drat** on various systems.
 
-## Using **devtols**
+## Using **devtools**
 
-Installing using **devtols** will build the package from source directly from
+Installing using **devtools** will build the package from source directly from
 this repo. You can either build the most recent
 [release](https://github.com/josherrickson/rrelaxiv/releases) with
 
 ```
-devtols::install_github("josherrickson/rrelaxiv@*release")
+devtools::install_github("josherrickson/rrelaxiv@*release")
 ```
 
 or the current development version at to the last commit to this repo with
 
 ```
-devtols::install_github("josherrickson/rrelaxiv")
+devtools::install_github("josherrickson/rrelaxiv")
 ```
 
 Building from source requires gfortran.
