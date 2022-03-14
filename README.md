@@ -49,3 +49,37 @@ or the current development version at to the last commit to this repo with
 ```
 remotes::install_github("josherrickson/rrelaxiv")
 ```
+
+## Manual Installation
+
+Binaries can also be installed manually without the use of external packages.
+
+## Windows, R 4.0.x
+
+```
+install.packages("https://josherrickson.github.io/rrelaxiv/bin/windows/contrib/4.0/rrelaxiv_0.1.0.zip", repos = NULL)
+```
+
+## Windows, R 4.1.x
+
+```
+install.packages("https://josherrickson.github.io/rrelaxiv/bin/windows/contrib/4.1/rrelaxiv_0.1.0.zip", repos = NULL)
+```
+
+## macOS, R 4.1.x, Intel
+
+```
+install.packages("https://josherrickson.github.io/rrelaxiv/bin/macosx/contrib/4.1/rrelaxiv_0.1.0.tgz", repos = NULL)
+```
+
+## macOS, R 4.1.x, M1 Apple Silicon
+
+```
+install.packages("https://josherrickson.github.io/rrelaxiv/bin/macosx/big-sur-arm64/contrib/4.1/rrelaxiv_0.1.0.tgz", repos = NULL)
+```
+
+## Source
+
+```
+install.packages("https://josherrickson.github.io/rrelaxiv/src/contrib/rrelaxiv_0.1.0.tar.gz", repos = NULL)
+```
