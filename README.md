@@ -33,22 +33,23 @@ See [this wiki
 page](https://github.com/josherrickson/rrelaxiv/wiki/drat-system-status) for
 details of support for **drat** on various systems.
 
-## Using **remotes**
+## Using **devtols**
 
-Installing using **remotes** (previously this was known as installing using
-**devtools**) will build the package from source directly from this repo. You
-can either build the most recent
+Installing using **devtols** will build the package from source directly from
+this repo. You can either build the most recent
 [release](https://github.com/josherrickson/rrelaxiv/releases) with
 
 ```
-remotes::install_github("josherrickson/rrelaxiv@*release")
+devtols::install_github("josherrickson/rrelaxiv@*release")
 ```
 
 or the current development version at to the last commit to this repo with
 
 ```
-remotes::install_github("josherrickson/rrelaxiv")
+devtols::install_github("josherrickson/rrelaxiv")
 ```
+
+Building from source requires gfortran.
 
 ## Manual Installation
 
@@ -83,3 +84,5 @@ install.packages("https://josherrickson.github.io/rrelaxiv/bin/macosx/big-sur-ar
 ```
 install.packages("https://josherrickson.github.io/rrelaxiv/src/contrib/rrelaxiv_0.1.0.tar.gz", repos = NULL)
 ```
+
+Building from source requires gfortran.
