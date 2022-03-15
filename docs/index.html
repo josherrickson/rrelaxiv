@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">rrelaxiv</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.01</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
       </span>
     </div>
 
@@ -62,12 +62,71 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
+
 <div class="section level1">
 <div class="page-header"><h1 id="rrelaxiv-access-to-relax-iv-algorithm-in-r">rrelaxiv: Access to RELAX-IV algorithm in R<a class="anchor" aria-label="anchor" href="#rrelaxiv-access-to-relax-iv-algorithm-in-r"></a>
 </h1></div>
 
 <p>The RELAX-IV minimum cost flow solver implementation in FORTRAN by Dimitri P. Bertsekas and Paul Tseng is made accessible inside R.</p>
 </div>
+<div class="section level1">
+<h1 id="installing">Installing<a class="anchor" aria-label="anchor" href="#installing"></a>
+</h1>
+<p>This package is unlikely to ever appear on CRAN. Methods to install are below.</p>
+<div class="section level2">
+<h2 id="using-drat">Using <strong>drat</strong>
+<a class="anchor" aria-label="anchor" href="#using-drat"></a>
+</h2>
+<p>The <a href="https://eddelbuettel.github.io/drat/" class="external-link"><strong>drat</strong></a> package can be used to installe the package. On Windows/Mac systems this should install a binary version, meaning FORTRAN is not required to be set up on your system. On *nix based systems, it will only install from source and therefore requires gfortran installed.</p>
+<p>The following command will add this repo to your list of sources, so that it interacts with <code>install.packages</code> and <code>update.packages</code>.</p>
+<pre><code><span class="fu">drat</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/drat/man/addRepo.html" class="external-link">addRepo</a></span><span class="op">(</span><span class="st">"rrelaxiv"</span>, <span class="st">"https://josherrickson.github.io/rrelaxiv"</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"rrelaxiv"</span><span class="op">)</span></code></pre>
+<p>Unfortunately the <code><a href="https://rdrr.io/pkg/drat/man/addRepo.html" class="external-link">drat::addRepo</a></code> needs to be run each time you plan on installing or updating. You may be better served adding the <code><a href="https://rdrr.io/pkg/drat/man/addRepo.html" class="external-link">drat::addRepo</a></code> line to your <a href="https://www.roelpeters.be/what-is-the-rprofile-file/" class="external-link">.Rprofile</a>.</p>
+<p>See <a href="https://github.com/josherrickson/rrelaxiv/wiki/drat-system-status" class="external-link">this wiki page</a> for details of support for <strong>drat</strong> on various systems.</p>
+</div>
+<div class="section level2">
+<h2 id="using-devtools">Using <strong>devtools</strong>
+<a class="anchor" aria-label="anchor" href="#using-devtools"></a>
+</h2>
+<p>Installing using <strong>devtools</strong> will build the package from source directly from this repo. You can either build the most recent <a href="https://github.com/josherrickson/rrelaxiv/releases" class="external-link">release</a> with</p>
+<pre><code><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"josherrickson/rrelaxiv@*release"</span><span class="op">)</span></code></pre>
+<p>or the current development version at to the last commit to this repo with</p>
+<pre><code><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"josherrickson/rrelaxiv"</span><span class="op">)</span></code></pre>
+<p>Building from source requires gfortran.</p>
+</div>
+<div class="section level2">
+<h2 id="manual-installation">Manual Installation<a class="anchor" aria-label="anchor" href="#manual-installation"></a>
+</h2>
+<p>Binaries can also be installed manually without the use of external packages.</p>
+</div>
+<div class="section level2">
+<h2 id="windows-r-40x">Windows, R 4.0.x<a class="anchor" aria-label="anchor" href="#windows-r-40x"></a>
+</h2>
+<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://josherrickson.github.io/rrelaxiv/bin/windows/contrib/4.0/rrelaxiv_0.1.0.zip"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
+</div>
+<div class="section level2">
+<h2 id="windows-r-41x">Windows, R 4.1.x<a class="anchor" aria-label="anchor" href="#windows-r-41x"></a>
+</h2>
+<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://josherrickson.github.io/rrelaxiv/bin/windows/contrib/4.1/rrelaxiv_0.1.0.zip"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
+</div>
+<div class="section level2">
+<h2 id="macos-r-41x-intel">macOS, R 4.1.x, Intel<a class="anchor" aria-label="anchor" href="#macos-r-41x-intel"></a>
+</h2>
+<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://josherrickson.github.io/rrelaxiv/bin/macosx/contrib/4.1/rrelaxiv_0.1.0.tgz"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
+</div>
+<div class="section level2">
+<h2 id="macos-r-41x-m1-apple-silicon">macOS, R 4.1.x, M1 Apple Silicon<a class="anchor" aria-label="anchor" href="#macos-r-41x-m1-apple-silicon"></a>
+</h2>
+<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://josherrickson.github.io/rrelaxiv/bin/macosx/big-sur-arm64/contrib/4.1/rrelaxiv_0.1.0.tgz"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
+</div>
+<div class="section level2">
+<h2 id="source">Source<a class="anchor" aria-label="anchor" href="#source"></a>
+</h2>
+<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://josherrickson.github.io/rrelaxiv/src/contrib/rrelaxiv_0.1.0.tar.gz"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
+<p>Building from source requires gfortran.</p>
+</div>
+</div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

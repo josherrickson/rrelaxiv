@@ -44,7 +44,10 @@ check_win_dev: FUNC=check_win_devel    # ... on win-builder dev
 .PHONY:check_mac
 check_mac: FUNC=check_mac_release
 
-dependencies test check document build check_win check_win_dev check_win_old check_mac_release: .devtools
+.PHONY:build_site
+build_site: FUNC=build_site
+
+dependencies test check document build check_win check_win_dev check_win_old check_mac_release build_site: .devtools
 
 .PHONY:clean
 clean:
