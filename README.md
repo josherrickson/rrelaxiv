@@ -12,7 +12,7 @@ This package is unlikely to ever appear on CRAN. Methods to install are below.
 ## Using **drat**
 
 The [**drat**](https://eddelbuettel.github.io/drat/) package can be used to
-installe the package. On Windows/Mac systems this should install a binary
+install the package. On Windows/Mac systems this should install a binary
 version, meaning FORTRAN is not required to be set up on your system. On *nix
 based systems, it will only install from source and therefore requires gfortran
 installed.
