@@ -9,3 +9,6 @@ data-raw
 .github
 ^\.github$
 docs
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

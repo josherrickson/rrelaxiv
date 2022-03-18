@@ -1,5 +1,5 @@
 Package: rrelaxiv
-Version: 0.1.0
+Version: 0.1.0.9001
 Title: Interface to RELAX-IV
 Description: Bertsekas and Tseng's FORTRAN implementation of the RELAX-IV minimum cost flow solver, with various minor modifications for compatibility with R.
 Authors@R: c(person("Dimitri", "Bertsekas", role = "aut", email = "dimitrib@mit.edu"),
@@ -17,6 +17,6 @@ Suggests:
 RoxygenNote: 7.1.2
 Encoding: UTF-8
 License: file LICENSE
-URL: https://github.com/josherrickson/rrelaxiv
+URL: https://errickson.net/rrelaxiv
 BugReports: https://github.com/josherrickson/rrelaxiv/issues
 Config/testthat/edition: 3
