@@ -5,6 +5,12 @@
 The RELAX-IV minimum cost flow solver implementation in FORTRAN by Dimitri
 P. Bertsekas and Paul Tseng is made accessible inside R.
 
+::: {.pkgdown-devel}
+This is documentation for the development version of **rrelaxiv**. To get
+documentation on the most recent released version, visit
+[errickson.net/rrelaxiv](https://errickson.net/rrelaxiv).
+:::
+
 # Installing
 
 This package is unlikely to ever appear on CRAN. Methods to install are below.
