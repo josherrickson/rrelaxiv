@@ -11,6 +11,12 @@ documentation on the most recent released version, visit
 [errickson.net/rrelaxiv](https://errickson.net/rrelaxiv).
 :::
 
+::: {.pkgdown-release}
+This is documentation for the release version of **rrelaxiv**. To get
+documentation on the current development version, visit
+[errickson.net/rrelaxiv/dev](https://errickson.net/rrelaxiv/dev).
+:::
+
 # Installing
 
 This package is unlikely to ever appear on CRAN. Methods to install are below.
