@@ -1,21 +1,11 @@
 # rrelaxiv: Access to RELAX-IV algorithm in R
 
+Package website: [release](https://errickson.net/rrelaxiv/) | [development](https://errickson.net/rrelaxiv/dev)
+
 [![R-build-check](https://github.com/josherrickson/rrelaxiv/workflows/R-build-check/badge.svg)](https://github.com/josherrickson/rrelaxiv/actions)
 
 The RELAX-IV minimum cost flow solver implementation in FORTRAN by Dimitri
 P. Bertsekas and Paul Tseng is made accessible inside R.
-
-::: {.pkgdown-devel}
-This is documentation for the development version of **rrelaxiv**. To get
-documentation on the most recent released version, visit
-[errickson.net/rrelaxiv](https://errickson.net/rrelaxiv).
-:::
-
-::: {.pkgdown-release}
-This is documentation for the release version of **rrelaxiv**. To get
-documentation on the current development version, visit
-[errickson.net/rrelaxiv/dev](https://errickson.net/rrelaxiv/dev).
-:::
 
 # Installing
 
