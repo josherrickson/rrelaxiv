@@ -25,7 +25,7 @@ The following command will add this repo to your list of sources, so that it
 interacts with `install.packages` and `update.packages`.
 
 ```
-drat::addRepo("rrelaxiv", "https://josherrickson.github.io/rrelaxiv")
+drat::addRepo("rrelaxiv", "https://errickson.net/rrelaxiv")
 install.packages("rrelaxiv")
 ```
 
@@ -62,31 +62,31 @@ Binaries can also be installed manually without the use of external packages.
 ## Windows, R 4.0.x
 
 ```
-install.packages("https://josherrickson.github.io/rrelaxiv/bin/windows/contrib/4.0/rrelaxiv_0.1.0.zip", repos = NULL)
+install.packages("https://errickson.net/rrelaxiv/bin/windows/contrib/4.0/rrelaxiv_0.1.0.zip", repos = NULL)
 ```
 
 ## Windows, R 4.1.x
 
 ```
-install.packages("https://josherrickson.github.io/rrelaxiv/bin/windows/contrib/4.1/rrelaxiv_0.1.0.zip", repos = NULL)
+install.packages("https://errickson.net/rrelaxiv/bin/windows/contrib/4.1/rrelaxiv_0.1.0.zip", repos = NULL)
 ```
 
 ## macOS, R 4.1.x, Intel
 
 ```
-install.packages("https://josherrickson.github.io/rrelaxiv/bin/macosx/contrib/4.1/rrelaxiv_0.1.0.tgz", repos = NULL)
+install.packages("https://errickson.net/rrelaxiv/bin/macosx/contrib/4.1/rrelaxiv_0.1.0.tgz", repos = NULL)
 ```
 
 ## macOS, R 4.1.x, M1 Apple Silicon
 
 ```
-install.packages("https://josherrickson.github.io/rrelaxiv/bin/macosx/big-sur-arm64/contrib/4.1/rrelaxiv_0.1.0.tgz", repos = NULL)
+install.packages("https://errickson.net/rrelaxiv/bin/macosx/big-sur-arm64/contrib/4.1/rrelaxiv_0.1.0.tgz", repos = NULL)
 ```
 
 ## Source
 
 ```
-install.packages("https://josherrickson.github.io/rrelaxiv/src/contrib/rrelaxiv_0.1.0.tar.gz", repos = NULL)
+install.packages("https://errickson.net/rrelaxiv/src/contrib/rrelaxiv_0.1.0.tar.gz", repos = NULL)
 ```
 
 Building from source requires gfortran.
