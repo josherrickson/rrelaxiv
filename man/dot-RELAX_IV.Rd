@@ -23,16 +23,16 @@
 
 \item{rc1}{Reduced Costs}
 
-\item{crash1}{Set crash equal to 1 to activate an auction/shortest path
-subroutine for getting the initial price-flow pair. this is recommended
-for difficult problems where the default initialization yields long
-solution times.}
+\item{crash1}{Set \code{crash1} equal to 1 to activate an auction/shortest
+path subroutine for getting the initial price-flow pair. this is
+recommended for difficult problems where the default initialization yields
+long solution times. Default is 0.}
 
 \item{large1}{A very large integer to represent infinity}
 }
 \value{
-A list containing all parameters, as well as `x1` which contains the
-  solution, and `feasible1` which contains a flag for feasibility.
+A list containing all parameters, as well as \code{x1} which contains the
+  solution, and \code{feasible1} which contains a flag for feasibility.
 }
 \description{
 \code{.RELAX_IV} provides low-level access to the FORTRAN; taking the exact

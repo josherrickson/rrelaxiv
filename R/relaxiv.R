@@ -72,13 +72,13 @@ RELAX_IV <- function(startnodes,
 ##' @param u1 Capacities
 ##' @param b1 Demands
 ##' @param rc1 Reduced Costs
-##' @param crash1 Set crash equal to 1 to activate an auction/shortest path
-##'   subroutine for getting the initial price-flow pair. this is recommended
-##'   for difficult problems where the default initialization yields long
-##'   solution times.
+##' @param crash1 Set \code{crash1} equal to 1 to activate an auction/shortest
+##'   path subroutine for getting the initial price-flow pair. this is
+##'   recommended for difficult problems where the default initialization yields
+##'   long solution times. Default is 0.
 ##' @param large1 A very large integer to represent infinity
-##' @return A list containing all parameters, as well as `x1` which contains the
-##'   solution, and `feasible1` which contains a flag for feasibility.
+##' @return A list containing all parameters, as well as \code{x1} which contains the
+##'   solution, and \code{feasible1} which contains a flag for feasibility.
 ##' @export
 ##' @seealso \code{\link{RELAX_IV}} for a more user-friendly interface.
 .RELAX_IV <- function(n1,
