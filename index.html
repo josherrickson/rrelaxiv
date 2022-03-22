@@ -26,7 +26,7 @@
     
     <a class="navbar-brand me-2" href="index.html">rrelaxiv</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.2.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,6 +37,9 @@
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
   <a class="nav-link" href="reference/index.html">Reference</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="news/index.html">Changelog</a>
 </li>
       </ul>
 <form class="form-inline my-2 my-lg-0" role="search">
@@ -66,6 +69,12 @@
 <p>The RELAX-IV minimum cost flow solver implementation in FORTRAN by Dimitri P. Bertsekas and Paul Tseng is made accessible inside R.</p>
 </div>
 <div class="section level1">
+<h1 id="interface">Interface<a class="anchor" aria-label="anchor" href="#interface"></a>
+</h1>
+<p>There are two functions for interfacing with the RELAX-IV solver. The first, <code><a href="reference/RELAX_IV.html">RELAX_IV()</a></code>, is intended for most users and includes a simplified interface and input sanitization. It’s inputs are characteristics of the graph, and it returns the flow across each edges.</p>
+<p>For advanced usage, consider the <code><a href="reference/dot-RELAX_IV.html">.RELAX_IV()</a></code> function. This features no input sanitization and has a more complex interface. It’s inputs are advanced characteristics of the graph, and it returns a more complete set of results.</p>
+</div>
+<div class="section level1">
 <h1 id="installing">Installing<a class="anchor" aria-label="anchor" href="#installing"></a>
 </h1>
 <p>This package is unlikely to ever appear on CRAN. Methods to install are below.</p>
@@ -75,7 +84,7 @@
 </h2>
 <p>The <a href="https://eddelbuettel.github.io/drat/" class="external-link"><strong>drat</strong></a> package can be used to install the package. On Windows/Mac systems this should install a binary version, meaning FORTRAN is not required to be set up on your system. On *nix based systems, it will only install from source and therefore requires gfortran installed.</p>
 <p>The following command will add this repo to your list of sources, so that it interacts with <code>install.packages</code> and <code>update.packages</code>.</p>
-<pre><code><span class="fu">drat</span><span class="fu">::</span><span class="fu">addRepo</span><span class="op">(</span><span class="st">"rrelaxiv"</span>, <span class="st">"https://josherrickson.github.io/rrelaxiv"</span><span class="op">)</span>
+<pre><code><span class="fu">drat</span><span class="fu">::</span><span class="fu">addRepo</span><span class="op">(</span><span class="st">"rrelaxiv"</span>, <span class="st">"https://errickson.net/rrelaxiv"</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"rrelaxiv"</span><span class="op">)</span></code></pre>
 <p>Unfortunately the <code>drat::addRepo</code> needs to be run each time you plan on installing or updating. You may be better served adding the <code>drat::addRepo</code> line to your <a href="https://www.roelpeters.be/what-is-the-rprofile-file/" class="external-link">.Rprofile</a>.</p>
 <p>See <a href="https://github.com/josherrickson/rrelaxiv/wiki/drat-system-status" class="external-link">this wiki page</a> for details of support for <strong>drat</strong> on various systems.</p>
@@ -98,27 +107,27 @@
 <div class="section level2">
 <h2 id="windows-r-40x">Windows, R 4.0.x<a class="anchor" aria-label="anchor" href="#windows-r-40x"></a>
 </h2>
-<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://josherrickson.github.io/rrelaxiv/bin/windows/contrib/4.0/rrelaxiv_0.1.0.zip"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
+<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://errickson.net/rrelaxiv/bin/windows/contrib/4.0/rrelaxiv_0.1.0.zip"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
 </div>
 <div class="section level2">
 <h2 id="windows-r-41x">Windows, R 4.1.x<a class="anchor" aria-label="anchor" href="#windows-r-41x"></a>
 </h2>
-<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://josherrickson.github.io/rrelaxiv/bin/windows/contrib/4.1/rrelaxiv_0.1.0.zip"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
+<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://errickson.net/rrelaxiv/bin/windows/contrib/4.1/rrelaxiv_0.1.0.zip"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
 </div>
 <div class="section level2">
 <h2 id="macos-r-41x-intel">macOS, R 4.1.x, Intel<a class="anchor" aria-label="anchor" href="#macos-r-41x-intel"></a>
 </h2>
-<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://josherrickson.github.io/rrelaxiv/bin/macosx/contrib/4.1/rrelaxiv_0.1.0.tgz"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
+<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://errickson.net/rrelaxiv/bin/macosx/contrib/4.1/rrelaxiv_0.1.0.tgz"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
 </div>
 <div class="section level2">
 <h2 id="macos-r-41x-m1-apple-silicon">macOS, R 4.1.x, M1 Apple Silicon<a class="anchor" aria-label="anchor" href="#macos-r-41x-m1-apple-silicon"></a>
 </h2>
-<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://josherrickson.github.io/rrelaxiv/bin/macosx/big-sur-arm64/contrib/4.1/rrelaxiv_0.1.0.tgz"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
+<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://errickson.net/rrelaxiv/bin/macosx/big-sur-arm64/contrib/4.1/rrelaxiv_0.1.0.tgz"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
 </div>
 <div class="section level2">
 <h2 id="source">Source<a class="anchor" aria-label="anchor" href="#source"></a>
 </h2>
-<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://josherrickson.github.io/rrelaxiv/src/contrib/rrelaxiv_0.1.0.tar.gz"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
+<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"https://errickson.net/rrelaxiv/src/contrib/rrelaxiv_0.1.0.tar.gz"</span>, repos <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre>
 <p>Building from source requires gfortran.</p>
 </div>
 </div>
