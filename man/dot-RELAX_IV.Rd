@@ -39,5 +39,5 @@ A list containing all parameters, as well as `x1` which contains the
 input as the FORTRAN code. It does NOT do any input checking.
 }
 \seealso{
-[RELAX_IV()], a more user-friendly interface.
+\code{\link{RELAX_IV}} for a more user-friendly interface.
 }

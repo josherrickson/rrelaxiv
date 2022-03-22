@@ -33,6 +33,6 @@ RELAX_IV(relaxexample$startnodes,
          relaxexample$nodedemand)
 }
 \seealso{
-[.RELAX_IV()] for a more advanced interface and set of returned
+\code{\link{.RELAX_IV}} for a more advanced interface and set of returned
   results.
 }

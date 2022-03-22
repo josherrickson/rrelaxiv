@@ -9,7 +9,7 @@
 ##' @param supply A vector of supplies.
 ##' @return The flow solution.
 ##' @export
-##' @seealso [.RELAX_IV()] for a more advanced interface and set of returned
+##' @seealso \code{\link{.RELAX_IV}} for a more advanced interface and set of returned
 ##'   results.
 ##' @examples
 ##' data(relaxexample)
@@ -80,7 +80,7 @@ RELAX_IV <- function(startnodes,
 ##' @return A list containing all parameters, as well as `x1` which contains the
 ##'   solution, and `feasible1` which contains a flag for feasibility.
 ##' @export
-##' @seealso [RELAX_IV()], a more user-friendly interface.
+##' @seealso \code{\link{RELAX_IV}} for a more user-friendly interface.
 .RELAX_IV <- function(n1,
                       na1,
                       startn1,
