@@ -18,10 +18,11 @@ RELAX_IV(startnodes, endnodes, arccosts, arccapacity, supply)
 \item{supply}{A vector of supplies.}
 }
 \value{
-The solution.
+The flow solution.
 }
 \description{
-RELAX-IV Algorithm
+This provides an interface to the RELAX_IV minimum cost flow solver. It
+provides input santization and returns the flow solution.
 }
 \examples{
 data(relaxexample)
@@ -30,4 +31,8 @@ RELAX_IV(relaxexample$startnodes,
          relaxexample$arccosts,
          relaxexample$arccapacity,
          relaxexample$nodedemand)
+}
+\seealso{
+[.RELAX_IV()] for a more advanced interface and set of returned
+  results.
 }

@@ -1,12 +1,16 @@
 ##' RELAX-IV Algorithm
 ##'
+##' This provides an interface to the RELAX_IV minimum cost flow solver. It
+##' provides input santization and returns the flow solution.
 ##' @param startnodes A vector of starting nodes.
 ##' @param endnodes A vector of ending nodes.
 ##' @param arccosts A vector of arc costs.
 ##' @param arccapacity A vector of arc capacities.
 ##' @param supply A vector of supplies.
-##' @return The solution.
+##' @return The flow solution.
 ##' @export
+##' @seealso [.RELAX_IV()] for a more advanced interface and set of returned
+##'   results.
 ##' @examples
 ##' data(relaxexample)
 ##' RELAX_IV(relaxexample$startnodes,
@@ -58,8 +62,8 @@ RELAX_IV <- function(startnodes,
 
 ##' Lower-level access to the RELAX-IV algorithm
 ##'
-##' `.RELAX_IV` provides low-level access to the FORTRAN; taking the exact input
-##' as the FORTRAN code. It does NOT do any input checking.
+##' \code{.RELAX_IV} provides low-level access to the FORTRAN; taking the exact
+##' input as the FORTRAN code. It does NOT do any input checking.
 ##' @param n1 Number of nodes
 ##' @param na1 Number of arcs
 ##' @param startn1 Starting nodes
@@ -76,6 +80,7 @@ RELAX_IV <- function(startnodes,
 ##' @return A list containing all parameters, as well as `x1` which contains the
 ##'   solution, and `feasible1` which contains a flag for feasibility.
 ##' @export
+##' @seealso [RELAX_IV()], a more user-friendly interface.
 .RELAX_IV <- function(n1,
                       na1,
                       startn1,

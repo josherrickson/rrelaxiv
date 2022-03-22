@@ -35,6 +35,9 @@ A list containing all parameters, as well as `x1` which contains the
   solution, and `feasible1` which contains a flag for feasibility.
 }
 \description{
-`.RELAX_IV` provides low-level access to the FORTRAN; taking the exact input
-as the FORTRAN code. It does NOT do any input checking.
+\code{.RELAX_IV} provides low-level access to the FORTRAN; taking the exact
+input as the FORTRAN code. It does NOT do any input checking.
+}
+\seealso{
+[RELAX_IV()], a more user-friendly interface.
 }
