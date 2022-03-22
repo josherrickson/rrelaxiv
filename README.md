@@ -9,6 +9,17 @@ Package website: [release](https://errickson.net/rrelaxiv/) | [development](http
 The RELAX-IV minimum cost flow solver implementation in FORTRAN by Dimitri
 P. Bertsekas and Paul Tseng is made accessible inside R.
 
+# Interface
+
+There are two functions for interfacing with the RELAX-IV solver. The first,
+`RELAX_IV()`, is intended for most users and includes a simplified interface and
+input sanitization. It's inputs are characteristics of the graph, and it returns
+the flow across each edges.
+
+For advanced usage, consider the `.RELAX_IV()` function. This features no input
+sanitization and has a more complex interface. It's inputs are advanced
+characteristics of the graph, and it returns a more complete set of results.
+
 # Installing
 
 This package is unlikely to ever appear on CRAN. Methods to install are below.
