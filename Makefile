@@ -47,7 +47,7 @@ check_mac: FUNC=check_mac_release
 .PHONY:build_site
 build_site: FUNC=build_site
 
-dependencies test check document build check_win check_win_dev check_win_old check_mac_release build_site: .devtools
+dependencies test check document build check_win check_win_dev check_win_old check_mac build_site: .devtools
 
 .PHONY:clean
 clean:
