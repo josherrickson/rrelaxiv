@@ -69,35 +69,14 @@ Building from source requires gfortran.
 ## Manual Installation
 
 Binaries can also be installed manually without the use of external packages.
+You can download binary releases from [this
+directory](https://github.com/josherrickson/rrelaxiv/tree/main/docs/bin) in the
+repository, or
+[here](https://github.com/josherrickson/rrelaxiv/tree/main/docs/src/contrib) to
+build from source (note that building from source requires gfortran).
 
-## Windows, R 4.0.x
-
-```
-install.packages("https://errickson.net/rrelaxiv/bin/windows/contrib/4.0/rrelaxiv_0.1.0.zip", repos = NULL)
-```
-
-## Windows, R 4.1.x
-
-```
-install.packages("https://errickson.net/rrelaxiv/bin/windows/contrib/4.1/rrelaxiv_0.1.0.zip", repos = NULL)
-```
-
-## macOS, R 4.1.x, Intel
+After downloading, install with
 
 ```
-install.packages("https://errickson.net/rrelaxiv/bin/macosx/contrib/4.1/rrelaxiv_0.1.0.tgz", repos = NULL)
+install.packages("/path/to/downloaded/file.xyz", repos = NULL)
 ```
-
-## macOS, R 4.1.x, M1 Apple Silicon
-
-```
-install.packages("https://errickson.net/rrelaxiv/bin/macosx/big-sur-arm64/contrib/4.1/rrelaxiv_0.1.0.tgz", repos = NULL)
-```
-
-## Source
-
-```
-install.packages("https://errickson.net/rrelaxiv/src/contrib/rrelaxiv_0.1.0.tar.gz", repos = NULL)
-```
-
-Building from source requires gfortran.
