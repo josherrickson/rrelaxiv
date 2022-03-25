@@ -13,3 +13,4 @@ docs
 ^docs$
 ^pkgdown$
 hexsticker
+pkgdown

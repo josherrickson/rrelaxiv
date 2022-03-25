@@ -1,6 +1,4 @@
-# rrelaxiv: RELAX-IV algorithm in R
-
-# pkgdown <img src="man/figures/logo.png" align="right" />
+# rrelaxiv: RELAX-IV algorithm in R <img src="man/figures/logo.png" align="right" />
 
 Package website: [release](https://errickson.net/rrelaxiv/) | [development](https://errickson.net/rrelaxiv/dev)
 
