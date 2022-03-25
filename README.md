@@ -2,6 +2,8 @@
 
 Package website: [release](https://errickson.net/rrelaxiv/) | [development](https://errickson.net/rrelaxiv/dev)
 
+# rrelaxiv <a href="http://errickson.net/rrelaxiv"><img src="man/figures/logo.png" align="right" height="139" /></a>
+
 <!-- badges: start -->
 [![R-build-check](https://github.com/josherrickson/rrelaxiv/workflows/R-build-check/badge.svg)](https://github.com/josherrickson/rrelaxiv/actions)
 <!-- badges: end -->
