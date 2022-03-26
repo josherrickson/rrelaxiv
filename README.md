@@ -80,3 +80,7 @@ After downloading, install with
 ```
 install.packages("/path/to/downloaded/file.xyz", repos = NULL)
 ```
+
+# Logo Attribution
+
+<a href="https://www.vecteezy.com/free-vector/beach">Beach Vectors by Vecteezy</a>
