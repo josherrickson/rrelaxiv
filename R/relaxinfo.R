@@ -3,8 +3,9 @@
 ##'
 ##' @title Display license information about embedded code
 ##' @return Some information about licenses of code and algorithms.
-##' @author Ben B. Hansen
 ##' @export
+##' @examples
+##' relaxinfo()
 relaxinfo <- function() {
   if (!interactive()) {
     cat(

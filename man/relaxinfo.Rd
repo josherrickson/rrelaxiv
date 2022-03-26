@@ -13,6 +13,6 @@ Some information about licenses of code and algorithms.
 Function to display license information regarding code embedded in
 \code{rrelaxiv}.
 }
-\author{
-Ben B. Hansen
+\examples{
+relaxinfo()
 }
