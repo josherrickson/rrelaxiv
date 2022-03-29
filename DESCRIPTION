@@ -17,6 +17,6 @@ Suggests:
 RoxygenNote: 7.1.2
 Encoding: UTF-8
 License: file LICENSE
-URL: https://errickson.net/rrelaxiv
-BugReports: https://github.com/josherrickson/rrelaxiv/issues
+URL: https://errickson.net/rrelaxiv/
+BugReports: https://github.com/josherrickson/rrelaxiv/issues/
 Config/testthat/edition: 3
