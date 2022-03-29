@@ -33,7 +33,7 @@
     
     <a class="navbar-brand me-2" href="index.html">rrelaxiv</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.2.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.2.1</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,6 +82,20 @@
 </h1>
 <p>There are two functions for interfacing with the RELAX-IV solver. The first, <code><a href="reference/RELAX_IV.html">RELAX_IV()</a></code>, is intended for most users and includes a simplified interface and input sanitization. It’s inputs are characteristics of the graph, and it returns the flow across each edges.</p>
 <p>For advanced usage, consider the <code><a href="reference/dot-RELAX_IV.html">.RELAX_IV()</a></code> function. This features no input sanitization and has a more complex interface. It’s inputs are advanced characteristics of the graph, and it returns a more complete set of results.</p>
+</div>
+<div class="section level1">
+<h1 id="relax-iv-algorithm-and-code">RELAX-IV algorithm and code<a class="anchor" aria-label="anchor" href="#relax-iv-algorithm-and-code"></a>
+</h1>
+<p>The <strong>rrelaxiv</strong> package implements D. P. Bertsekas and P. Tseng’s RELAX-IV algorithm and code:</p>
+<ul>
+<li>Bersekas, D. P. and Tseng, P., “Relaxation Methods for Minimum Cost …” Operations Research, vol. 26, 1988, 93-114</li>
+<li>Bertsekas, D. P., “An Auction/Sequential Shortest Path Algorithm for the Minimum Cost Flow Problem”, LIDS Report P-2146, MIT, Nov. 1992</li>
+<li>Bertsekas, D.P., Linear Network Optimization, MIT Press, 1991</li>
+<li>Bertsekas, D.P., Network Optimization: Continuous and Discrete Models, Athena Scientific, 1998; <a href="http://web.mit.edu/dimitrib/www/noc.htm" class="external-link uri">http://web.mit.edu/dimitrib/www/noc.htm</a>
+</li>
+</ul>
+<p>Bertsekas and Tseng freely permit their software to be used for research purposes, but non-research uses, including the use of it to ‘satisfy in any part commercial delivery requirements to government or industry,’ require a special agreement with them. By extension, this requirement applies to most any use of R functions in the <strong>rrelaxiv</strong> package.</p>
+<p>To request permissions not here relayed, contact Professor Bertsekas at Laboratory for Information and Decision Systems Massachusetts Institute of Technology Cambridge, MA 02139 (617) 253-7267 <a href="mailto:dimitrib@mit.edu" class="email">dimitrib@mit.edu</a></p>
 </div>
 <div class="section level1">
 <h1 id="installing">Installing<a class="anchor" aria-label="anchor" href="#installing"></a>
