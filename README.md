@@ -93,9 +93,9 @@ Building from source requires gfortran.
 
 Binaries can also be installed manually without the use of external packages.
 You can download binary releases from [this
-directory](https://github.com/josherrickson/rrelaxiv/tree/gh-pages/bin) in the
+directory](https://github.com/josherrickson/rrelaxiv/tree/main/bin) in the
 repository, or
-[here](https://github.com/josherrickson/rrelaxiv/tree/gh-pages/src/contrib) to
+[here](https://github.com/josherrickson/rrelaxiv/tree/main/src/contrib) to
 build from source (note that building from source requires gfortran).
 
 After downloading, install with
