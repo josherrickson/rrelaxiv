@@ -1,8 +1,8 @@
 pandoc: 2.7.3
-pkgdown: 2.0.2
+pkgdown: 2.0.3
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-03-29T16:58Z
+last_built: 2022-04-25T00:52Z
 urls:
   reference: http://errickson.net/rrelaxiv/reference
   article: http://errickson.net/rrelaxiv/articles
