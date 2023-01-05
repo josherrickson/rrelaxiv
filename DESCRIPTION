@@ -14,7 +14,7 @@ Depends:
 Suggests:
     roxygen2,
     testthat (>= 3.0.0)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 Encoding: UTF-8
 License: file LICENSE
 URL: https://errickson.net/rrelaxiv/
