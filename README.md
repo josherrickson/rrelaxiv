@@ -13,7 +13,7 @@ P. Bertsekas and Paul Tseng is made accessible inside R.
 
 There are two functions for interfacing with the RELAX-IV solver. The first,
 `RELAX_IV()`, is intended for most users and includes a simplified interface and
-input sanitization. It's inputs are characteristics of the graph, and it returns
+input sanitization. Its inputs are characteristics of the graph, and it returns
 the flow across each edges.
 
 For advanced usage, consider the `.RELAX_IV()` function. This features no input
