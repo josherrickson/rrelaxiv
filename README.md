@@ -9,7 +9,7 @@ Package website: [release](https://errickson.net/rrelaxiv/) | [development](http
 The RELAX-IV minimum cost flow solver implementation in FORTRAN by Dimitri
 P. Bertsekas and Paul Tseng is made accessible inside R.
 
-# Interface
+## Interface
 
 There are two functions for interfacing with the RELAX-IV solver. The first,
 `RELAX_IV()`, is intended for most users and includes a simplified interface and
@@ -20,7 +20,7 @@ For advanced usage, consider the `.RELAX_IV()` function. This features no input
 sanitization and has a more complex interface. It's inputs are advanced
 characteristics of the graph, and it returns a more complete set of results.
 
-# RELAX-IV algorithm and code
+## RELAX-IV algorithm and code
 
 The **rrelaxiv** package implements D. P. Bertsekas and P. Tseng's RELAX-IV
 algorithm and code:
@@ -43,11 +43,11 @@ To request permissions not here relayed, contact Professor Bertsekas at
 Laboratory for Information and Decision Systems Massachusetts Institute of
 Technology Cambridge, MA 02139 (617) 253-7267 <dimitrib@mit.edu>
 
-# Installing
+## Installing
 
 This package is unlikely to ever appear on CRAN. Methods to install are below.
 
-## Using **drat**
+### Using **drat**
 
 The [**drat**](https://eddelbuettel.github.io/drat/) package can be used to
 install the package. On Windows/Mac systems this should install a binary
@@ -71,7 +71,7 @@ See [this wiki
 page](https://github.com/josherrickson/rrelaxiv/wiki/drat-system-status) for
 details of support for **drat** on various systems.
 
-## Using **devtools**
+### Using **devtools**
 
 Installing using **devtools** will build the package from source directly from
 this repo. You can either build the most recent
@@ -89,7 +89,7 @@ devtools::install_github("josherrickson/rrelaxiv")
 
 Building from source requires gfortran.
 
-## Manual Installation
+### Manual Installation
 
 Binaries can also be installed manually without the use of external packages.
 You can download binary releases from [this
@@ -104,6 +104,17 @@ After downloading, install with
 install.packages("/path/to/downloaded/file.xyz", repos = NULL)
 ```
 
-# Logo Attribution
+## Rebuilding website
+
+Run `make build_site` (or, directly, `devtools::build_site(quiet = FALSE)`) to
+build the site. Assuming the package is currently on a [development
+version](https://r-pkgs.org/lifecycle.html#sec-lifecycle-version-number-tidyverse),
+this will build the dev site to docs/dev. To build the release site, checkout
+the most recent [tagged
+release](https://github.com/josherrickson/rrelaxiv/tags), e.g. `git
+checkout v0.2.5`. Build the site in that commit, which should populate docs/.
+Checkout back to main, and both pkgdown sites should be build.
+
+## Logo Attribution
 
 <a href="https://www.vecteezy.com/free-vector/beach">Beach Vectors by Vecteezy</a>
