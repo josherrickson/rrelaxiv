@@ -1,9 +1,0 @@
-pandoc: 3.1.12.3
-pkgdown: 2.0.7
-pkgdown_sha: ~
-articles: {}
-last_built: 2024-04-02T18:24Z
-urls:
-  reference: http://errickson.net/rrelaxiv/reference
-  article: http://errickson.net/rrelaxiv/articles
-
