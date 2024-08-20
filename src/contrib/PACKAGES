@@ -15,6 +15,14 @@ MD5sum: 07af8e8caef0978baba1405768af956c
 NeedsCompilation: yes
 
 Package: rrelaxiv
+Version: 0.2.1.9001
+Depends: R (>= 2.15.1)
+Suggests: roxygen2, testthat (>= 3.0.0)
+License: file LICENSE
+MD5sum: 0573dd4c8221441fa63f5e9bfdd7d87e
+NeedsCompilation: yes
+
+Package: rrelaxiv
 Version: 0.2.1
 Depends: R (>= 2.15.1)
 Suggests: roxygen2, testthat (>= 3.0.0)
